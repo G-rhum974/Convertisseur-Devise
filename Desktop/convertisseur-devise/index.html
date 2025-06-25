@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convertisseur de devise</title> 
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="container"> <!-- Bloc principale -->
+    <h1>Convertisseur € → $ </h1> <!-- Titre -->
+
+    <label for="euros">Montant en € :</label> <!-- étquette pour le champnde saise-->
+    <input type="number" id="euros" placeholder="Entrez le montant"> <!-- Champ pour entrer le montant en euros-->
+
+    <button onclick="convertir()">Convertir</button> <!-- Bouton qui lance la fonction JS-->
+
+    <p id="resultat"></p> <!-- Paragraphe vide qui affiche le résultat -->
+</div>
+
+<script src="script.js"></script> <!-- Liens vers le fichier JavaScript -->
+</body>
+</html>
