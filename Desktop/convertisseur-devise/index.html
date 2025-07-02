@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Convertisseur de devise</title> 
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8"> <!-- Encodage UTF-8 pour gérer les caractères spéciaux -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Pour rendre la page responsive -->
+  <title>Convertisseur de devises</title> <!-- Titre de l'onglet du navigateur -->
+  <link rel="stylesheet" href="style.css"> <!-- Lien vers le fichier CSS -->
 </head>
 <body>
-  
-  <div class="container"> <!-- Bloc principale -->
-    <h1>Convertisseur € → $ </h1> <!-- Titre -->
 
-    <label for="euros">Montant en € :</label> <!-- étquette pour le champnde saise-->
-    <input type="number" id="euros" placeholder="Entrez le montant"> <!-- Champ pour entrer le montant en euros-->
+  <div class="container"> <!-- Bloc principal -->
+    <h1>Convertisseur € ➜ $</h1> <!-- Titre -->
 
-    <button onclick="convertir()">Convertir</button> <!-- Bouton qui lance la fonction JS-->
+    <label for="euros">Montant en € :</label> <!-- Étiquette pour le champ de saisie -->
+    <input type="number" id="euros" placeholder="Entrez le montant"> <!-- Champ pour entrer le montant en euros -->
 
-    <p id="resultat"></p> <!-- Paragraphe vide qui affiche le résultat -->
-</div>
+    <button onclick="convertir()">Convertir</button> <!-- Bouton qui lance la fonction JS -->
 
-<script src="script.js"></script> <!-- Liens vers le fichier JavaScript -->
+    <p id="resultat"></p> <!-- Paragraphe vide qui affichera le résultat -->
+  </div>
+
+  <script src="script.js"></script> <!-- Lien vers le fichier JavaScript -->
 </body>
 </html>

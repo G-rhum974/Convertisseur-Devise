@@ -1,0 +1,56 @@
+/* Style générall du corps de la page */
+body {
+  font-family: Arial, Helvetica, sans-serif; /* Police de caractère */
+  background-color: #f0f0f0; /* Couleur de fond */
+  display: flex; /* Utilisationde flex box */
+  justify-content: center; /* Centrage horizontal */
+  align-items: center; /* Centrage vertical */
+  height: 100vh; /* Hauteur total de l'écran */
+  margin: 0; /* Enlève les marges par défaut */
+  }
+
+  /* Conteneur principale */
+  .container {
+    background-color: #ffffff; /* Fond blanc */
+    padding: 30px; /* Espace intérieur */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Ombre douce*/
+    width: 500px; /* Largeur fixe */
+    text-align: center; /* Centrage de texte*/
+  }
+
+  /* Champ de saisie*/
+  input {
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid #ccc; /* Bordure grise*/
+    border-radius: 5px; /* Coins arrondis*/
+    font-size: 16px;
+  }
+
+  /* Bouton */
+button {
+  padding: 10px;
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Résultat */
+#resultat {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+  
