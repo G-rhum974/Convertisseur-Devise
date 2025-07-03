@@ -9,15 +9,21 @@
 <body>
 
   <div class="container"> <!-- Bloc principal -->
-    <h1>Convertisseur € ➜ $</h1> <!-- Titre -->
+    <h1>Convertisseur de devises</h1> <!-- Titre -->
 
-    <label for="euros">Montant en € :</label> <!-- Étiquette pour le champ de saisie -->
-    <input type="number" id="euros" placeholder="Entrez le montant"> <!-- Champ pour entrer le montant en euros -->
+   <!-- Drapeaux -->
+    <div class="flags">
+      <img src="http://flagcdn.com/fr.svg" alt="euro" title="euro">
+      <img src="http://flagcdn.com/us.svg" alt="dollar" title="dollar">
+    </div>
 
-    <button onclick="convertir()">Convertir</button> <!-- Bouton qui lance la fonction JS -->
+    <!-- Bouton d'action -->
+    <button onclick="convertirEurosversDollars()">€ → $</button> 
+    <button onclick="convertirDollarsversEuros()">$ → €</button> 
 
-    <p id="resultat"></p> <!-- Paragraphe vide qui affichera le résultat -->
-  </div>
+    <!-- Résultat-->
+    <p id="resultat"></p> 
+</div>
 
   <script src="script.js"></script> <!-- Lien vers le fichier JavaScript -->
 </body>
