@@ -1,21 +1,37 @@
 
-// Fonction appelée lorsque l'utilisateur clique sur "Convertir"
-function convertir() {
-  const taux = 1.08; //1 euro = 1.08 dollars ( taux fixe ici pour simplifier)
+// Fonction pour vérifier si une entrée est un nombre valide et positif
+function estValide(nombre) {
+  return !isNaN(nombre) && nombre > 0;
+}
 
-  const montantEuros = document.getElementById("euros").value;
-  // On récupère la valeur saisie daans le champ avec l' id "euros"
+// Fonction pour convertir des euros en dollars
+function convertirEurosVersDollars() {
+  const montant = prompt("Entrez le montant en euros (€) :");
+  const taux = prompt("Entrez le taux de conversion (1€ = combien de $) :");
 
-  if (montantEuros === "") {
-    // Si l'utilisateur n'a rien saisie, on affiche un message
-    document.getElementById("resultat").textContent = "Veuillez entrer un montant.";
-    return; // On arrête l'exécution de la fonction
+  if (!estValide(montant) || !estValide(taux)) {
+    document.getElementById("resultat").textContent = "Entrée invalide. Essayez avec des nombres positifs.";
+    return;
   }
 
-  const montantDollars = montantEuros * taux; 
-  // On effectue la conversion
-
-  // On affiche le résultat arrondi à 2 chiffres après la vigule
-  document.getElementById("resultat").textContent = 
-   `${montantEuros} € = ${montantDollars.toFixed(2)} $`;
+  const resultat = parseFloat(montant) * parseFloat(taux);
+  document.getElementById("resultat").textContent = `${montant} € = ${resultat.toFixed(2)} $`;
 }
+
+// Fonction pour convertir des dollars en euros
+function convertirDollarsVersEuros() {
+  const montant = prompt("Entrez le montant en dollars ($) :");
+  const taux = prompt("Entrez le taux de conversion (1$ = combien de €) :");
+
+  if (!estValide(montant) || !estValide(taux)) {
+    document.getElementById("resultat").textContent = "Entrée invalide. Essayez avec des nombres positifs.";
+    return;
+  }
+
+  const resultat = parseFloat(montant) * parseFloat(taux);
+  document.getElementById("resultat").textContent = `${montant} $ = ${resultat.toFixed(2)} €`;
+}
+
+
+
+
