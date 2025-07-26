@@ -1,0 +1,58 @@
+& /* Style général de la page */
+body { 
+  font-family: Arial, Helvetica, sans-serif; /* Police simple et lisible */
+  margin: 20px; /* Marge autour du contenu */
+  background-color: #f9f9f9; /* fond clair */
+  color: #333; /*couleur de texte */
+}
+
+/* Titre principale */
+h1 {
+  text-align: center; /* Centrer le titre */
+  color: #333;
+}
+
+/* sections */
+section {
+  background-color: #fff; /* Fond blanc pour les sections */
+  border: 1px solid #ddd; /* bordure grise claire */
+  border-radius: 8px; /* Coins arrondis */
+  padding: 15px; /* Espacement interne */
+  margin-bottom: 20px; /* Espacement entre les sections */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Légère ombre */
+}
+
+/* Imputs et boutons */
+input, button {
+  padding: 8px;
+  margin: 5px 0; /* Espacement vertical */
+  border: 1px solid #ccc; /* Bordure grise */
+  border-radius: 4px; 
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9; /* Bleu foncé au survol */
+}
+
+/* Liste des produits et panier */
+ul {
+  list-style-type: none; /* Supprimer les puces */
+  padding: 0;
+}
+
+li {
+  border-bottom: 1px solid #eee; /* Ligne séparatrice */
+  padding: 5px 0; /* Espacement vertical */
+}
+
+#total-panier {
+  font-weight: bold; /* Mettre en gras le total */
+  color: green;
+}
+

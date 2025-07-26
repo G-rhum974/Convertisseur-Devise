@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestionnaire de Produits</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Titrre principal de l'application -->
+ <h1>📦 Gestionnaire de Produits</h1>
+
+ <!-- Formulaire pour ajouter un produit -->
+  <section id="ajouter-produit">
+    <h2>➕ Ajouter un produit</h2>
+    <input type="text" id="nom" placebolder="Nom du produit">
+    <input type="number" id="prix" placebolder="Prix (€)">
+    <input type="number" id="stock" placebolder="stock">
+    <button id="btn-ajouter">Ajouter</button>
+  </section>
+
+  <!-- Zone pour la recherche -->
+  <section id="recherche">
+    <h2>🔍 Recherche</h2>
+    <input type="text" id="filtre-nom" placebolder="Rechercher un produit par nom">
+    <button id="btn-filtrer">Filtrer</button>
+  </section>
+
+  <!-- Liste des produits-->
+   <section id="liste-produits">
+    <h2>📋 Liste des produits</h2>
+    <ul id="produits"></ul>
+</section>
+
+<!-- Zone pour le panier -->
+<section id="panier">
+  <h2>🛒 panier</h2>
+  <ul id="liste-panier"></ul>
+  <p><strong>Total : </strong><span id="total-panier">0</span> €</p>
+  <button id="vider-panier">Vider le panier</button>
+</section>
+
+<!-- Liens vers le fichier JavaScript -->
+ <script src="script.js"></script>
+
+</body>
+</html>
+
+                         TROUVE LE BUG AVANT D'AVANCER
+
+
+
+                         VOIR AVEC GPT POUR AJOUTER DES FONCTION : EXEMPLE : RETIRER DES PRODUIT, AVOIR LA CANTITÉ DES PRODUITS EN STOCKS
